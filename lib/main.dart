@@ -113,9 +113,8 @@ class _MyHomePageState extends State<MyHomePage> {
             //keys / values
             print(scoreMap.keys.toList());//[dddd, eee, ff, bb, a]//keyのみ表示
             print(scoreMap.values.toList());//[100, 20, 40, 50, 80] //valueのみ表示
-            //forEach　★繰り返し処理
+            //forEach　★繰り返し処理  //単純な反復処理
             scoreMap.forEach((key, value) {
-              //単純な反復処理
               print('$keyと$valueを出力');
               //ddddと100を出力
               // eeeと20を出力
@@ -126,6 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
             //複雑な反復処理したい場合
             for(int i = 0; i < scoreMap.length; i++){
               //複雑な反復処理
+              print(i);
             }
           },
         // onPressed: _incrementCounter,
